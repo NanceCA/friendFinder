@@ -216,16 +216,19 @@
         var newFriend = {
             name: $("#name").val().trim(),
             picture: $("#picture").val().trim(),
-            question1: $("#ideas").val().trim(),
-            question2: $("#experience").val().trim(),
-            question3: $("#pressure").val().trim(),
-            question4: $("#team").val().trim(),
-            question5: $("#curiosity").val().trim(),
-            question6: $("#attitude").val().trim(),
-            question7: $("#feelings").val().trim(),
-            question8: $("#data").val().trim(),
-            question9: $("#data").val().trim(),
-            question10: $("#views").val().trim()
+            scores:
+                [
+                    $("#ideas").val().trim(),
+                    $("#experience").val().trim(),
+                    $("#pressure").val().trim(),
+                    $("#team").val().trim(),
+                    $("#curiosity").val().trim(),
+                    $("#attitude").val().trim(),
+                    $("#feelings").val().trim(),
+                    $("#data").val().trim(),
+                    $("#data").val().trim(),
+                    $("#views").val().trim()
+                ]
         };
         console.log(newFriend);
 
