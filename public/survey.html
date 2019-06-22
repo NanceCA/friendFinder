@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Welcome to the Survey!</h1>
+            <hr>
+            <h4 class="text-center">Take the Survey Here to Find your most Compatible Friend</h4>
+            <br>
+        </div>
+        <!-- closes the container with the jumbrotron -->
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header"> <strong>The Ultimate Friend Finder Survey </strong>
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">What is your name?</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="picture">Link to profile picture</label>
+                                <input type="text" class="form-control" id="picture">
+                            </div>
+                            <!--Multiple choice questions start here-->
+                            <!--Question 1-->
+                            <div class="form-group">
+                                <h4>Question 1</h4>
+                                <label for="ideas">Your mind is buzzing with unexplored ideas</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="ideas">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 2-->
+                            <div class="form-group">
+                                <h4>Question 2</h4>
+                                <label for="experience">Generally speaking, you rely more on your experience than your
+                                    imagination</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="experience">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 3-->
+                            <div class="form-group">
+                                <h4>Question 3</h4>
+                                <label for="pressure">You find it easy to stay relaxed and focused even when there is
+                                    pressure.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="pressure">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 4-->
+                            <div class="form-group">
+                                <h4>Question 4</h4>
+                                <label for="team">You prefer to work in a team rather than individually.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="team">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 5-->
+                            <div class="form-group">
+                                <h4>Question 5</h4>
+                                <label for="curiosity">You rarely do something just out of sheer curiosity.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="curiosity">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 6-->
+                            <div class="form-group">
+                                <h4>Question 6</h4>
+                                <label for="attitude">People can rarely upset you.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="attitude">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 7-->
+                            <div class="form-group">
+                                <h4>Question 7</h4>
+                                <label for="feelings">It is often difficult for you to relate to other people’s
+                                    feelings.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="feelings">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 8-->
+                            <div class="form-group">
+                                <h4>Question 8</h4>
+                                <label for="data">In a discussion, quantitative data takes precedent over qualitative
+                                    data.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="data">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 9-->
+                            <div class="form-group">
+                                <h4>Question 9</h4>
+                                <label for="extrovert">You feel more energetic after spending time with a group of
+                                    people.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="extrovert">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <!--Question 10-->
+                            <div class="form-group">
+                                <h4>Question 10</h4>
+                                <label for="views">You think that everyone’s views should be respected regardless of
+                                    whether they are supported by facts or not.</label><br>
+                                <!-- <input type="checkbox" class="form-control" id="Ideas"> -->
+                                <select id="views">
+                                    <option value="1"> 1 - Strongly Disagree </option>
+                                    <option value="1"> 2 </option>
+                                    <option value="1"> 3 </option>
+                                    <option value="1"> 4 </option>
+                                    <option value="1"> 5 - Strongly Agree </option>
+                                </select>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                            <br>
+                        </form>
+                        <br>
+
+                    </div>
+                    <!--ends the card body div-->
+                </div>
+            </div>
+
+        </div>
+        <!-- ends the row div-->
+
+    </div>
+    <!--closes the container-->
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Friends Link</a></p>
+        </div>
+    </footer>
+
+    </div>
+
+
+</body>
+
+<script type="text/javascript">
+    //script tags here to include AJAX calls
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        //grabbing the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            picture: $("#picture").val().trim(),
+            question1: $("#ideas").val().trim(),
+            question2: $("#experience").val().trim(),
+            question3: $("#pressure").val().trim(),
+            question4: $("#team").val().trim(),
+            question5: $("#curiosity").val().trim(),
+            question6: $("#attitude").val().trim(),
+            question7: $("#feelings").val().trim(),
+            question8: $("#data").val().trim(),
+            question9: $("#data").val().trim(),
+            question10: $("#views").val().trim()
+        };
+        console.log(newFriend);
+
+        //pass in the URL, the object and a callback for the front end
+        //call back should be the response from the server
+        $.post("/api/friends", newFriend)
+            .then(function (data) {
+                console.log("we've made it to the post");
+
+
+                alert("Thanks for submitting the survey.");
+                //clearing the form for the next submission
+                $("#name").val("");
+                $("#picture").val("");
+                // $("#ideas").val("");
+                // $("#experience").val("");
+                // $("#pressure").val("");
+                // $("#team").val("");
+                // $("#curiosity").val("");
+                // $("#attitude").val("");
+                // $("#feelings").val("");
+                // $("#extrovert").val("");
+                // $("#views").val("");
+            });
+    });
+
+
+</script>
+
+</html>
