@@ -10,12 +10,12 @@ module.exports = function (app) {
         res.json(friends);
     })
 
-    app.post("/api/friends", function (req, res) {
+    app.post("/api/friends", function (data, res) {
         //send this to app/data/friends.js to save as an array of objects
         //push into the array friends 
         console.log("Did we get here?")
-        console.log("The req.body is", req.body);
-        friends.push(req.body);
+        console.log("The req.body is", data.body);
+        friends.push(data.body);
         console.log(friends);
     });
 
