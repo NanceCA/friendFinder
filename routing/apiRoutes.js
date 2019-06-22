@@ -17,6 +17,21 @@ module.exports = function (app) {
         console.log("The req.body is", data.body);
         friends.push(data.body);
         console.log(friends);
+
+        //loop through the list to find a compatible friend
+
+        var totalScore = 0;
+        for (var i = 0; i < friends.length; i++) {
+
+            for (var j = 1; j < friends.length; j++) {
+
+                totalScore = [friends[i].question1 - friends[j].question1];
+                if (totalScore === 0) {
+                    alert(friends[i].name, "is your most compatible friend!");
+                }
+
+            }
+        }
     });
 
 }
