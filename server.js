@@ -3,9 +3,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-//the dot means look next to me on the same folder 
-require("./routing/htmlRoutes")(app);
-require("./routing/apiRoutes")(app);
+
 
 //import the files that need this set up code
 
@@ -17,6 +15,11 @@ var PORT = process.env.PORT || 8080;
 //this is an example of middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+
+//the dot means look next to me on the same folder 
+require("./routing/htmlRoutes")(app);
+require("./routing/apiRoutes")(app);
 
 
 app.listen(PORT, function () {
