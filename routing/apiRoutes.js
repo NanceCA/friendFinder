@@ -10,28 +10,29 @@ module.exports = function (app) {
         res.json(friends);
     })
 
-    app.post("/api/friends", function (data, res) {
+    app.post("/api/friends", function (req, res) {
         //send this to app/data/friends.js to save as an array of objects
         //push into the array friends 
         console.log("Did we get here?")
-        console.log("The req.body is", data.body);
-        friends.push(data.body);
-        console.log(friends);
+        console.log("The req.body is", req.body);
+        friends.push(req.body);
+        console.log("Console logging", friends);
+        res.json(friends)
 
         //loop through the list to find a compatible friend
 
-        var totalScore = 0;
-        for (var i = 0; i < friends.length; i++) {
+        // var totalScore = 0;
+        // for (var i = 0; i < friends.length; i++) {
 
-            for (var j = 1; j < friends.length; j++) {
+        //     for (var j = 1; j < friends.length; j++) {
 
-                totalScore = [friends[i].question1 - friends[j].question1];
-                if (totalScore === 0) {
-                    alert(friends[i].name, "is your most compatible friend!");
-                }
+        //         totalScore = [friends[i].question1 - friends[j].question1];
+        //         if (totalScore === 0) {
+        //             alert(friends[i].name, "is your most compatible friend!");
+        //         }
 
-            }
-        }
+        //     }
+        // }
     });
 
 }
