@@ -10,7 +10,7 @@ Users are prompted to take a short 10 question personality quiz. Data, via a POS
 
 ## Running the Application
 
-The application is hosted but can also be run from a local server (8080).
+The application is hosted but can also be run from a local server (8080). The hosted application can be found [here.](https://fierce-forest-11043.herokuapp.com/)
 Running a local server requires the following code in the terminal:
 ```
 nodemon server.js
