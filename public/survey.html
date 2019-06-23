@@ -238,7 +238,7 @@
             .then(function (data) {
                 console.log("we've made it to the post");
                 console.log("the data", data)
-                alert("We've found your most compatible friend. It's ", data);
+                alert("Your most compatible friend is, " + data.name);
 
                 //clearing the form for the next submission
                 $("#name").val("");

@@ -54,15 +54,14 @@ module.exports = function (app) {
         var compatible = Math.min.apply(null, compatability);
         console.log("minimum of the array is ", compatible);
         var match = compatability.indexOf(compatible);
-        // var realMatch = friends[match].name;
-        // console.log(realMatch);
 
         //COMPATABILITY SUCCESS!
         console.log("You are most compatible with ", friends[match].name);
+        console.log(friends[match]);
 
         //push into the array friends
         friends.push(newFriend);
-        res.json(friends[match].name)
+        res.json(friends[match]);
 
     });
 
