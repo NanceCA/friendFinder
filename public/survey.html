@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!--Code starting here-->
+
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center">Welcome to the Survey!</h1>
@@ -177,8 +179,31 @@
                                 </select>
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                            <button type="submit" data-toggle="modal" data-target="#myModal"
+                                class="btn btn-primary submit">Submit</button>
                             <br>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+
+                                            <h4 class="modal-title">Compatability</h4>
+                                        </div>
+                                        <div class="modal-body" id="data-name"></div>
+                                        <div class="modal-body" id="data-photo"></div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </form>
                         <br>
 
@@ -237,23 +262,32 @@
         $.post("/api/friends", newFriend)
             .then(function (data) {
                 console.log("we've made it to the post");
-                console.log("the data", data)
-                alert("Your most compatible friend is, " + data.name);
+                $("#data-name").html("The results are in! You're most compatible with " + data.name);
+                $("#data-photo").html("<img src='" + data.picture + "'+ class ='center' width = '150' height = '150' >")
+                // console.log("the data", data);
+                // alert("Your most compatible friend is, " + data.name);
 
-                //clearing the form for the next submission
-                $("#name").val("");
-                $("#picture").val("");
-                // $("#ideas").val("");
-                // $("#experience").val("");
-                // $("#pressure").val("");
-                // $("#team").val("");
-                // $("#curiosity").val("");
-                // $("#attitude").val("");
-                // $("#feelings").val("");
-                // $("#extrovert").val("");
-                // $("#views").val("");
+                //                 $("button").click(function(){
+                //   $("p").html("Hello <b>world</b>!");
+                // });
+
+                //add an id to the paragraph element
             });
+
+        //clearing the form for the next submission
+        $("#name").val("");
+        $("#picture").val("");
+        // $("#ideas").val("");
+        // $("#experience").val("");
+        // $("#pressure").val("");
+        // $("#team").val("");
+        // $("#curiosity").val("");
+        // $("#attitude").val("");
+        // $("#feelings").val("");
+        // $("#extrovert").val("");
+        // $("#views").val("");
     });
+
 
 
 </script>

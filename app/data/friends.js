@@ -2,7 +2,7 @@
 
 var friends = [{
     name: "Violet",
-    picture: "Link",
+    picture: "https://cdn2-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg",
     scores: [
         1,
         5,
@@ -18,7 +18,7 @@ var friends = [{
 },
 {
     name: "Gus",
-    picture: "Link",
+    picture: "https://i.pinimg.com/originals/55/84/06/558406267234f669477d344316b2c40e.jpg",
     scores: [
         5,
         1,
