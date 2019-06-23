@@ -62,7 +62,7 @@ module.exports = function (app) {
 
         //push into the array friends
         friends.push(newFriend);
-        res.json(friends)
+        res.json(friends[match].name)
 
     });
 

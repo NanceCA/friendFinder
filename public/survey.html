@@ -234,30 +234,25 @@
 
         //pass in the URL, the object and a callback for the front end
         //call back should be the response from the server
-        $.post("/api/friends", newFriend, function (data) {
-            console.log("we've made it to the post");
-            console.log(data)
+        $.post("/api/friends", newFriend)
+            .then(function (data) {
+                console.log("we've made it to the post");
+                console.log("the data", data)
+                alert("We've found your most compatible friend. It's ", data);
 
-            if (data) {
-                alert("We've found your most compatible friend");
-            }
-            else {
-                alert("Not enough data to find your most compatible friend");
-            }
-
-            //clearing the form for the next submission
-            $("#name").val("");
-            $("#picture").val("");
-            // $("#ideas").val("");
-            // $("#experience").val("");
-            // $("#pressure").val("");
-            // $("#team").val("");
-            // $("#curiosity").val("");
-            // $("#attitude").val("");
-            // $("#feelings").val("");
-            // $("#extrovert").val("");
-            // $("#views").val("");
-        });
+                //clearing the form for the next submission
+                $("#name").val("");
+                $("#picture").val("");
+                // $("#ideas").val("");
+                // $("#experience").val("");
+                // $("#pressure").val("");
+                // $("#team").val("");
+                // $("#curiosity").val("");
+                // $("#attitude").val("");
+                // $("#feelings").val("");
+                // $("#extrovert").val("");
+                // $("#views").val("");
+            });
     });
 
 
